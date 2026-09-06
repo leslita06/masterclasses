@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masterclasses IMPACT IA 2026</title>
+<meta name="description" content="Le programme des 18 masterclasses d'IMPACT IA 2026, les 10 et 11 septembre à Latrille Events, Abidjan.">
+<meta property="og:title" content="Masterclasses IMPACT IA 2026">
+<meta property="og:description" content="18 masterclasses, les 10 et 11 septembre 2026, Latrille Events, Abidjan. Programme complet et plan des salles.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Funnel+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --turquoise:#00B0A8; --vert:#00B082; --orange:#FF8900;
+    --encre:#000E17; --gris:#5C6B73; --trait:#E4EBEE;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:#fff; color:var(--encre);
+    font-family:"Funnel Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; padding:24px;
+  }
+  .carte{max-width:560px;width:100%;text-align:center}
+  .barre{
+    height:6px;width:96px;margin:0 auto 26px;border-radius:6px;
+    background:linear-gradient(90deg,var(--turquoise),var(--vert));
+  }
+  .sur{
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--orange);font-weight:700;margin-bottom:10px;
+  }
+  h1{
+    font-family:Antonio,"Funnel Sans",sans-serif;font-weight:700;
+    font-size:clamp(30px,7vw,46px);line-height:1.05;margin:0 0 14px;
+    text-transform:uppercase;letter-spacing:.01em;
+  }
+  .quand{font-size:17px;color:var(--gris);margin:0 0 4px}
+  .ou{font-size:15px;color:var(--gris);margin:0 0 28px}
+  .bouton{
+    display:inline-block;padding:15px 30px;border-radius:999px;
+    background:var(--turquoise);color:#fff;text-decoration:none;
+    font-weight:700;font-size:16px;
+  }
+  .bouton:hover{background:var(--vert)}
+  .secondaires{margin-top:26px;padding-top:22px;border-top:1px solid var(--trait);
+    font-size:14px;color:var(--gris);line-height:1.9}
+  .secondaires a{color:var(--encre);font-weight:600}
+  .note{margin-top:22px;font-size:12.5px;color:var(--gris)}
+</style>
+</head>
+<body>
+  <main class="carte">
+    <div class="barre"></div>
+    <p class="sur">Impact IA 2026</p>
+    <h1>Les masterclasses</h1>
+    <p class="quand">Jeudi 10 et vendredi 11 septembre 2026</p>
+    <p class="ou">Latrille Events, Deux Plateaux, Abidjan</p>
+
+    <a class="bouton" id="programme"
+       href="https://docs.google.com/document/d/1I53qQJJRPjgru7c9fQDHgk5-FuJ95W1izq6tU3lc-4k/edit">
+      Ouvrir le programme
+    </a>
+
+    <div class="secondaires">
+      <a href="https://luma.com/jkk2usoc">Choisir sa masterclass</a><br>
+      <a href="https://luma.com/4cqbpknm">S'inscrire à IMPACT IA</a>
+    </div>
+
+    <p class="note">Inscription obligatoire aux deux : la masterclass et l'événement.</p>
+  </main>
+<script>
+  // Redirection douce vers le programme. Le délai laisse la page s'afficher quand le
+  // lien est partagé, et le bouton reste là si la redirection est bloquée.
+  setTimeout(function () {
+    window.location.replace(document.getElementById("programme").href);
+  }, 1800);
+</script>
+</body>
+</html>
